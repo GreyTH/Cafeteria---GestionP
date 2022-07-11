@@ -1,0 +1,154 @@
+
+/*Navegacion*/
+nav
+{
+	margin: -30px auto 0;
+	position: relative;
+	width: 678px;
+	height: 50px;
+	background-color: #f89c7b;
+	border-radius: 8px;
+}
+
+nav a /*Del menu de modulos*/
+{
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+} 
+
+nav .animation
+{
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+
+a:nth-child(1)
+{
+	width: 100px;
+}
+a:nth-child(2)
+{
+	width: 110px;
+}
+a:nth-child(3)
+{
+	width: 100px;
+}
+a:nth-child(4)
+{
+	width: 100px;
+}
+a:nth-child(5)
+{
+	width: 120px;
+}
+a:nth-child(6)
+{
+	width: 120px;
+}
+
+nav .start-home, a:nth-child(1):hover~.animation
+{
+	width: 100px;
+	left: 0;
+	background-color: #6a1a23;
+}
+nav .start-about, a:nth-child(2):hover~.animation
+{
+	width: 110px;
+	left: 100px;
+	background-color: #93505b;
+}
+nav .start-blog, a:nth-child(3):hover~.animation
+{
+	width: 100px;
+	left: 218px;
+	background-color: #6a1a23;
+}
+nav .start-portefolio, a:nth-child(4):hover~.animation
+{
+	width: 100px;
+	left: 322px;
+	background-color: #93505b;
+}
+nav .start-contact, a:nth-child(5):hover~.animation
+{
+	width: 120px;
+	left: 428px;
+	background-color: #6a1a23;
+}
+nav .start-contact, a:nth-child(6):hover~.animation
+{
+	width: 120px;
+	left: 558px;
+	background-color: #93505b;
+}
+
+
+header
+{
+    display: block;
+    width: 100%;
+    height: 600px;
+    background: #6f3e1bf0;
+    background: -webkit-linear-gradient(to right, hsla(343, 86%, 65%, 0.459), hsla(278, 50%, 46%, 0.588)), url(../img/fondo2.jpg);
+    background: linear-gradient(to right, hsla(22, 74%, 41%, 0.459), hsla(290, 40%, 42%, 0.575)), url(../img/fondo2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+/*Efecto Wave*/
+.wave
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+header .textos-header
+{
+    display: flex;
+    height: 290px; /*Mover el texto*/
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1
+{
+    margin: 5px;
+    line-height: 80px;
+    font-size: 40px;
+    color:#fff;
+}
+
+.textos-header h2
+{
+    margin: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    color:#fff;
+} 
+
+
+
+
+
+
